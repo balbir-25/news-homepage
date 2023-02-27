@@ -1,0 +1,333 @@
+@import url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    min-height: 100vh;
+    min-width: 1340px;
+    font-family: "Inter";
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(36, 100%, 99%);
+}  
+/* ============================START MAIN AREA================================= */
+.site{
+    margin-top: 50px;
+    padding:30px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "navbar navbar"
+    "info news"
+    "topic topic";
+    gap: 50px;
+}
+/* ============================START NAVBAR AREA============================== */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: navbar;
+}
+
+.logo{
+    height: fit-content;
+}
+
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 450px;
+}
+
+.nav-li{
+    margin: 0px 30px;
+    list-style: none;
+}
+
+.nav-a{
+    
+    color: hsl(236, 13%, 42%);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-a:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+.open, .close{
+    display: none;
+}
+/* ============================END NAVBAR AREA============================== */
+/* ============================START INFO SECTION AREA=========================== */
+.info{
+    width: 800px;
+    padding: 10px;
+    grid-area: info;
+}
+
+.info-img{
+    width: 100%;
+}
+
+.detail{
+    display: flex;
+    flex-direction: row;
+   gap: 50px;
+    width: 100%;
+    margin-top: 55px;
+}
+
+.detail-h1{
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 50px;
+    color:hsl(240, 100%, 5%);
+    width: 250px;
+}
+
+.intro-para{
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color:hsl(236, 13%, 42%);
+    width: 380px;
+}
+
+.btn{
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: hsl(5, 85%, 63%);
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(36, 100%, 99%);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+/* ============================END INFO SECTION AREA=========================== */
+/* ============================START ASIDE AREA=============================== */
+.news{
+    width:350px;
+    grid-area: news;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    padding: 30px 20px;
+}
+
+.news-h2{
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+    color:hsl(35, 77%, 62%);
+}
+
+.news-h3{
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    color:hsl(36, 100%, 99%);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.news-h3:hover{
+    color: hsl(35, 77%, 62%);
+}
+
+.news-para{
+   font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    color:hsl(233, 8%, 79%);
+    margin-top: 20px; 
+    padding-right: 8px;
+}
+
+hr{
+    margin-top: 30px;
+    border: 1px solid hsla(233, 8%, 79%, 0.259);
+}
+
+/* ============================END ASIDE AREA=============================== */
+/* ============================START TOPIC SECTION AREA========================= */
+.topic{
+    grid-area: topic;
+    display: flex;
+    flex-direction: row;  
+    gap: 50px; 
+}
+
+.num{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.num-img{
+    width: 100px;
+}
+
+.product-h4{
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    color:hsl(233, 8%, 79%);
+}
+
+.product-h3{
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px;
+    color:hsl(240, 100%, 5%);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.product-h3:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+.product-para{
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color:hsl(236, 13%, 42%);
+    margin-top: 10px; 
+    width: 220px;
+}
+/* ============================END TOPIC SECTION AREA========================= */
+/* ============================END MAIN AREA================================= */
+/* =============================START FOOTER  AREA=========================== */
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: hsl(0, 100%, 67%);
+    background-color: black;
+    margin-top: 50px;
+  }
+  
+  .foot a {
+    text-decoration: none;
+    color: hsl(39, 100%, 56%);
+  }
+
+  .foot a:hover{
+    color: hsl(300, 69%, 71%);
+  }
+  /* =============================END FOOTER  AREA=========================== */
+  /* =============================START MEDIA QUERY========================= */
+  @media screen and (max-width:500px) {
+    body{
+        min-width: 500px;
+    }
+
+
+    .site{
+        grid-template-columns: 1fr;
+        grid-template-areas: "navbar"
+        "info"
+        "news"
+        "topic";
+        padding: 30px 10px;
+        margin-top: 20px;
+    }
+
+    .open{
+        display: block;
+        margin-right: 50px;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+     .intro-para, .product-para{
+        width: 95%;
+    }
+
+    .detail, .topic{
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .nav-ul{
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        height: 100vh;
+        z-index: 1;
+        width: 250px;
+        right: 0px;
+        top: 140px;
+        position: fixed;
+        
+    }
+
+    .nav-li{
+        margin-top: 70px;
+    }
+
+    @keyframes slide-in {
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slide-out {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(100%);
+        }
+    }
+
+    .info-img{
+        content: url(./assets/images/image-web-3-mobile.jpg);
+    }
+
+    .close{
+        margin-right: 80px;
+        
+    }
+
+    .navbar{
+        align-items: normal;
+       
+    }
+
+    .nav-a{
+        font-size: 1.9rem;
+        font-weight: 800;
+    }
+
+  }
+  /* =============================END MEDIA QUERY========================= */
